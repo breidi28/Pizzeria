@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>Mario and Luigi's Pizzeria</title>
 </head>
     <body>
         <header>
-            <h1>Mario and Luigi's Pizzeria</h1>
+            <div class="header-text">
+                <h1>Mario and Luigi's Pizzeria</h1>
+            </div>
+            <div class="logo-container">
+                <img src="Pictures/logoexample.png" alt="Logo" class="headlogo">
+            </div>
         </header>
+        <main>
+            <div class="welcometext">
+                <img src="Pictures/logoexample.png" alt="Logo" class="mainlogo">
+                <h2>Welcome!</h2>
+                <p>Who is using</p>
+            </div>
+            <div class="button-container">
+                <button id="mariobutton">
+                    <a href="mario.html">
+                        <img src="Pictures/logoexample.png" alt="Logo" class="button-logo"><br>Mario
+                    </a>
+                </button>
+                <button id="luigibutton">
+                    <a href="luigi.html">
+                        <img src="Pictures/logoexample.png" alt="Logo" class="button-logo"><br>Luigi
+                    </a>
+                </button>
+            </div>
+        </main>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact service center</a></li>
             </ul>
         </nav>
-        <main>
-            <div id="todayoffer">
-                <h2>Today's Offer</h2>
-                <p>Buy one pizza and get the second one half price</p>
-            </div>
-            <div id="storepickup">
-                <h2>Store Pick-Up</h2>
-                <p>Order online and pick up in store</p>
-            </div>
-            <div id="delivery">
-                <h2>Delivery</h2>
-                <p>Order online and have it delivered to your door</p>
-        </main>
+        <footer class="footer">
+            <p>&copy; 2023 Mario and Luigi's Pizzeria</p>
+        </footer>
     </body>
 </html>
