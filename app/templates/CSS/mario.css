@@ -26,7 +26,7 @@ header h1 {
     margin-left: 10px;
 }
 
-/* show the pizzas on a 3x3 matrix */
+/* show the pizzas on a 3x3 mat3rix */
 .menu{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
