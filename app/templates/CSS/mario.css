@@ -62,3 +62,25 @@ header h1 {
 .menu-item{
     border: 1px solid #000000;
 }
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* make the buttons the same size for all */
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

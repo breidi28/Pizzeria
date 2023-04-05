@@ -10,18 +10,39 @@
         <header>
             <h1>Mario and Luigi's Pizzeria</h1>
         </header>
-        <!-- use the same pizzas and info from pizzas.csv file and show them on a 3X3 matrix-->
         <main>
+            <form action="/submit_pizzas" method="post">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="pizzas[]" value="pepperoni">
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" id="cheese" name="pizzas[]" value="cheese">
+                <label for="veggie">Veggie</label>
+                <input type="checkbox" id="veggie" name="pizzas[]" value="veggie">
+                <label for="meat">Meat Lover's</label>
+                <input type="checkbox" id="meat" name="pizzas[]" value="meat">
+                <label for="vegan">Vegan</label>
+                <input type="checkbox" id="vegan" name="pizzas[]" value="vegan">
+                <label for="quattro formaggi">Quattro Formaggi</label>
+                <input type="checkbox" id="quattro formaggi" name="pizzas[]" value="quattro formaggi">
+                <label for="quattro stagioni">Quattro Stagioni</label>
+                <input type="checkbox" id="quattro stagioni" name="pizzas[]" value="quattro stagioni">
+                <label for="supreme">Supreme</label>
+                <input type="checkbox" id="supreme" name="pizzas[]" value="supreme">
+                <label for="tonno">Tonno</label>
+                <input type="checkbox" id="tonno" name="pizzas[]" value="tonno">
+        
+                <input type="submit" value="Submit">
+            </form>
             <div class="menu">
                 <div class="menu-item">
                     <img src="Pictures/Placeholder.png" alt="Logo">
-                    <h2>Menu Item 1</h2>
+                    <h2>Pepperoni</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                 </div>
                 <div class="menu-item">
                     <img src="Pictures/Placeholder.png" alt="Logo">
-                    <h2>Menu Item 2</h2>
+                    <h2>Cheese</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                 </div>
