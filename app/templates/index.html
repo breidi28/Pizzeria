@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
     <title>Mario and Luigi's Pizzeria</title>
 </head>
     <body>
@@ -13,24 +13,24 @@
                 <h1>Mario and Luigi's Pizzeria</h1>
             </div>
             <div class="logo-container">
-                <img src="Pictures/Placeholder.png" alt="Logo" class="headlogo">
+                <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo" class="logo">
             </div>
         </header>
         <main>
             <div class="welcometext">
-                <img src="Pictures/Placeholder.png" alt="Logo" class="mainlogo">
+                <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo" class="mainlogo">
                 <h2>Welcome!</h2>
                 <p>Who is using</p>
             </div>
             <div class="button-container">
                 <button id="mariobutton">
                     <a href="mario.html">
-                        <img src="Pictures/Placeholder.png" alt="Logo" class="button-logo"><br>Mario
+                        <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo" class="button-logo"><br>Mario
                     </a>
                 </button>
                 <button id="luigibutton">
                     <a href="luigi.html">
-                        <img src="Pictures/Placeholder.png" alt="Logo" class="button-logo"><br>Luigi
+                        <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo" class="button-logo"><br>Luigi
                     </a>
                 </button>
             </div>
