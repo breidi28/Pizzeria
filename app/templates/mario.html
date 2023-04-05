@@ -13,6 +13,23 @@
         </header>
         <!-- use the same pizzas and info from pizzas.csv file and show them on a 3X3 matrix-->
         <main>
+
+            <form action="/submit_pizzas" method="post">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="pizzas[]" value="pepperoni">
+        
+                <label for="mushroom">Mushroom</label>
+                <input type="checkbox" id="mushroom" name="pizzas[]" value="mushroom">
+        
+                <label for="sausage">Sausage</label>
+                <input type="checkbox" id="sausage" name="pizzas[]" value="sausage">
+        
+                <label for="pineapple">Pineapple</label>
+                <input type="checkbox" id="pineapple" name="pizzas[]" value="pineapple">
+        
+                <input type="submit" value="Submit">
+            </form>
+
             <div class="menu">
                 <div class="menu-item">
                     <img src="Pictures/Placeholder.png" alt="Logo" class="menu-item-logo">
@@ -68,6 +85,7 @@
                     <p>Price: $12</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, ham, spicy sauce</p>
                 </div>
+
             </div>
         </main>
     </body>
