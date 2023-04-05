@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="CSS/luigi.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='luigi.css') }}">
+	<title>Pending Pizza Orders</title>
+</head>
+<body>
+	<header>
+        <h1>Mario and Luigi's Pizzeria</h1>
+    </header>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Order ID</th>
+				<th>Selected Pizzas</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for order in orders %}
+			<tr>
+				<td>{{ order.id }}</td>
+				<td>{{ order.selected_pizzas }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+</body>
+</html>
