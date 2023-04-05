@@ -15,5 +15,9 @@ def mario():
 def luigi():
     return render_template('luigi.html')
 
+@app.route('/submit_pizzas', methods=['POST'])
+def submit_pizzas():
+    return render_template('submit_pizzas.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
