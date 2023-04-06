@@ -11,23 +11,24 @@
 	<header>
         <h1>Mario and Luigi's Pizzeria</h1>
     </header>
-
-	<table>
-		<thead>
+	<main>
+		<h1>Pending pizza orders</h1>
+		<table>
 			<tr>
-				<th>Order ID</th>
-				<th>Selected Pizzas</th>
+				<th>Order Number</th>
+				<th>Pizza Name</th>
+				<th># of Pizzas</th>
+				<th>Time to Make</th>
 			</tr>
-		</thead>
-		<tbody>
 			{% for order in orders %}
 			<tr>
-				<td>{{ order.id }}</td>
-				<td>{{ order.selected_pizzas }}</td>
+				<td>{{ order.index }}</td>
+				<td>{{ order.pizza_name }}</td>
+				<td>{{ order.quantity }}</td>
+				<td>{{ order.time_left }}</td>
 			</tr>
 			{% endfor %}
-		</tbody>
-	</table>
-
+		</table>
+	</main>
 </body>
 </html>
