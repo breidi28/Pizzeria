@@ -7,89 +7,93 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mario.css') }}">
     <title>Menu Dashboard</title>
 </head>
-    <body>
-        <header>
-            <h1>Mario and Luigi's Pizzeria</h1>
-        </header>
-        <main>
-            <form action="/submit_pizzas" method="post">
-                <label for="pepperoni">Pepperoni</label>
-                <input type="number" id="pepperoni" name="pepperoni" min="0" max="10" value="0">
-                <label for="cheese">Cheese</label>
-                <input type="number" id="cheese" name="cheese" min="0" max="10" value="0">
-                <label for="veggie">Veggie</label>
-                <input type="number" id="veggie" name="veggie" min="0" max="10" value="0">
-                <label for="meat_lovers">Meat Lover's</label>
-                <input type="number" id="meat_lovers" name="meat_lovers" min="0" max="10" value="0">
-                <label for="vegan">Vegan</label>
-                <input type="number" id="vegan" name="vegan" min="0" max="10" value="0">
-                <label for="quattro_formaggi">Quattro Formaggi</label>
-                <input type="number" id="quattro_formaggi" name="quattro_formaggi" min="0" max="10" value="0">
-                <label for="quattro_stagioni">Quattro Stagioni</label>
-                <input type="number" id="quattro_stagioni" name="quattro_stagioni" min="0" max="10" value="0">
-                <label for="supreme">Supreme</label>
-                <input type="number" id="supreme" name="supreme" min="0" max="10" value="0">
-                <label for="tonno">Tonno</label>
-                <input type="number" id="tonno" name="tonno" min="0" max="10" value="0">
-                <input type="submit" value="Submit">
-            </form>
-
+<body>
+    <header>
+        <h1>Mario and Luigi's Pizzeria</h1>
+    </header>
+    <main>      
+        <form action="/submit_pizzas" method="post">
             <div class="menu">
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Pepperoni</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="pepperoni"></label>
+                    <input type="number" id="pepperoni" name="pepperoni" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Cheese</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="cheese"></label>
+                    <input type="number" id="cheese" name="cheese" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 3</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="veggie"></label>
+                    <input type="number" id="veggie" name="veggie" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 4</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="meat_lovers"></label>
+                    <input type="number" id="meat_lovers" name="meat_lovers" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 5</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="vegan"></label>
+                    <input type="number" id="vegan" name="vegan" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 6</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="quattro_formaggi"></label>
+                    <input type="number" id="quattro_formaggi" name="quattro_formaggi" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 7</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="quattro_stagioni"></label>
+                    <input type="number" id="quattro_stagioni" name="quattro_stagioni" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 8</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="supreme"></label>
+                    <input type="number" id="supreme" name="supreme" min="0" max="10" value="0">
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
                     <h2>Menu Item 9</h2>
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
+                    <label for="tonno"></label>
+                    <input type="number" id="tonno" name="tonno" min="0" max="10" value="0">
+                </div>
+                <div class="submitbutton">
+                    <input type="submit" value="Finish the order">
                 </div>
             </div>
-        </main>
-    </body>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Mario and Luigi's Pizzeria</p>
+    </footer>
+</body>
 </html>
