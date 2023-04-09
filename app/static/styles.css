@@ -3,23 +3,25 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* HEADER */
 header {
-  background-color: #d8d8d8;
-  padding: 10px;;
-  color: #00005a;
+  background-color: #009246;
+  padding: 10px;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
-  margin: 10px;
+  margin: 0px;
 }
 
 .logo-container {
@@ -40,7 +42,7 @@ header h1 {
 /* NAVIGATION */
 nav {
   margin-top: 5px;
-  background-color: #ca0000;
+  background-color: #CE2B37;
   padding: 0.1px;
 }
 
@@ -75,25 +77,44 @@ nav ul li {
 /* MAIN */
 main {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #mariobutton {
-  background-color: #ca0000;
+  background-color: #CE2B37;
   color: #fff;
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
   margin: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 #luigibutton {
-  background-color: #139334;
+  background-color: #009246;
   color: #fff;
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
   margin: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+#mariobutton:hover,
+#luigibutton:hover {
+    background-color: #636060;
 }
 
 .mainlogo {
@@ -104,30 +125,35 @@ main {
 }
 
 .button-logo {
-  width: 100px;
+  width: 150px;
   height: 100px;
   margin-bottom: 10px;
 }
 
-.welcometext {
-  color: #00005a;
-  font-weight: bold;
-  font-size: 25px;
-  margin: 1px;
+.welcometext p {
+  color: #6D4C41;
+  font-size: 24px;
+  margin: 0;
   text-align: center;
+}
+
+.welcometext h2 {
+  color: #CE2B37;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 10px;
+  align-items: center;
 }
-
-/* End of MAIN */
 
 /* FOOTER */
 .footer {
-  background-color: #d8d8d8;
   padding: 1px;
   color: #00005a;
   text-align: center;

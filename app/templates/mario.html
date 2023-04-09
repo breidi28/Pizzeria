@@ -20,7 +20,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="pepperoni"></label>
-                    <input type="number" id="pepperoni" name="pepperoni" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="pepperoni" name="pepperoni" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -28,7 +32,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="cheese"></label>
-                    <input type="number" id="cheese" name="cheese" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="cheese" name="cheese" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -36,7 +44,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="veggie"></label>
-                    <input type="number" id="veggie" name="veggie" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="veggie" name="veggie" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -44,7 +56,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="meat_lovers"></label>
-                    <input type="number" id="meat_lovers" name="meat_lovers" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="meat_lovers" name="meat_lovers" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -52,7 +68,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="vegan"></label>
-                    <input type="number" id="vegan" name="vegan" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="vegan" name="vegan" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -60,7 +80,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="quattro_formaggi"></label>
-                    <input type="number" id="quattro_formaggi" name="quattro_formaggi" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="quattro_formaggi" name="quattro_formaggi" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -68,7 +92,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="quattro_stagioni"></label>
-                    <input type="number" id="quattro_stagioni" name="quattro_stagioni" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="quattro_stagioni" name="quattro_stagioni" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -76,7 +104,11 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="supreme"></label>
-                    <input type="number" id="supreme" name="supreme" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="supreme" name="supreme" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="{{ url_for('static', filename='Placeholder.png') }}" alt="Logo">
@@ -84,11 +116,13 @@
                     <p>Price: $10</p>
                     <p>Ingredients: cheese, tomato sauce, pepperoni, sausage, mushrooms, onions, green peppers, black olives, and extra cheese.</p>
                     <label for="tonno"></label>
-                    <input type="number" id="tonno" name="tonno" min="0" max="10" value="0">
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" type="number" id="tonno" name="tonno" min="0" max="10" value="0">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
                 </div>
-                <div class="submitbutton">
-                    <input type="submit" value="Finish the order">
-                </div>
+                <input type="submit" class="submitbutton" value="Finish the order">
             </div>
         </form>
     </main>
